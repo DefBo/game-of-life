@@ -1,1 +1,1 @@
-# game-of-life
+# http://andriiv.com/game-of-life/ - Demo
