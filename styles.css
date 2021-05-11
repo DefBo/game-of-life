@@ -1,0 +1,52 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+html, body {
+    height: 100%;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.grid__container {
+    display: flex;
+    flex-direction: column;
+    background-color: #494949;
+}
+
+.grid__row {
+    display: flex;
+    width: 100%;
+    flex: 1;
+}
+
+.grid__item {
+    border: 1px solid transparent;
+    border-radius: 50%;
+    background-color: #000;
+    flex: 1;
+    transition: background-color 0.25s linear;
+}
+
+.grid__item_alive {
+    background-color: #fff;
+}
+
+@media (orientation: landscape) {
+    .grid__container {
+        width: 90vh;
+        height: 90vh;
+    }
+}
+
+@media (orientation: portrait) {
+    .grid__container {
+        width: 90vw;
+        height: 90vw;
+    }
+}
